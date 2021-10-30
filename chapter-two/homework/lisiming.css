@@ -1,0 +1,106 @@
+body {
+    padding: 0.5rem;
+}
+
+h3 {
+    padding: 0 0.5rem;
+}
+
+.top {
+    top: 0;
+    padding: 0 0.5rem;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .3em rgba(211, 211, 211, 0.4);
+}
+
+.link {
+    padding: 0 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.top-right {
+    padding: 0 0.5rem;
+    margin-right: 1.5rem;
+    list-style-type: none;
+    float: right;
+}
+
+a:hover {
+    background-color: gainsboro;
+}
+
+.box-row {
+    display: flex;
+    width: 100%;
+}
+
+.box {
+    position: relative;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem
+}
+
+img {
+    max-width: 800px;
+    width: 100%;
+}
+
+.inline-text {
+    background-color: gainsboro;
+    position: absolute;
+    padding: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.25rem;
+}
+
+.job {
+    color: darkgray;
+}
+
+.contact {
+    padding: 0.5rem;
+    background-color: #d6d3d3;
+    text-align: center;
+}
+
+.contact:hover {
+    background-color: red;
+}
+
+footer {
+    background-color: black;
+    padding: 0.5rem;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .box-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-right {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .top-right {
+        margin-right: 4rem;
+    }
+
+    .box-row {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 46%;
+    }
+}
+
+
